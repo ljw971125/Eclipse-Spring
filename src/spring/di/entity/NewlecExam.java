@@ -6,6 +6,23 @@ public class NewlecExam implements Exam {
 	private int eng;
 	private int math;
 	private int com;
+	
+	public NewlecExam() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+	public NewlecExam(int kor, int eng, int math, int com) {
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.com = com;
+	}
+	
+	
+
+
 
 	public int getKor() {
 		return kor;
@@ -49,6 +66,13 @@ public class NewlecExam implements Exam {
 	public float avg() {
 		// TODO Auto-generated method stub
 		return total() / 4.0f;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "NewlecExam [kor=" + kor + ", eng=" + eng + ", math=" + math + ", com=" + com + "]";
 	}
 
 }
